@@ -1,4 +1,3 @@
-// CountryContext.js
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -27,6 +26,4 @@ export const CountryProvider = ({ children }) => {
   );
 };
 
-export const useCountry = () => {
-  return useContext(CountryContext);
-};
+export const useCountry = () => useContext(CountryContext);
