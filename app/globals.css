@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.car-manuactories {
+
+}
+
+.flag-container {
+  span {
+    align-self: center;
+    word-break: break-word;
+  }
+}
+
+.loading-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+}
+
+.w-auto {
+  width: auto;
+  padding: 0 10px;
+}
+
+.countries-container {
+  max-height: 100vh;
+}
+
+.country-list-item {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 8px;
+  margin: 10px;
+  justify-content: space-between;
+
+  .flag {
+    width: 70px;
+    height: auto;
+    margin: auto 10px auto auto;
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
